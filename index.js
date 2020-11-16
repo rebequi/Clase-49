@@ -90,10 +90,10 @@ buscarMatches.onclick = () => {
           tercerCeldaHorizontal.classList.add("match-fila")
 
 
-          if (grilla [i][j] === grilla [i][i+1]  &&  grilla [i][j] === grilla [i][i+2]) {
-            const primerCeldaVertical = document.querySelector(`div[data-fila = '${j}'][data-columna = '${i}']`)
-            const segundaCeldaVertical = document.querySelector(`div[data-fila = '${j}'][data-columna = '${i + 1}']`)
-            const tercerCeldaVertical = document.querySelector(`div[data-fila = '${j}'][data-columna = '${i + 2}']`)
+          if (grilla [i][j] === grilla [i+1][j]  &&  grilla [i+1][j] === grilla [i+2][j]) {
+            const primerCeldaVertical = document.querySelector(`div[data-fila = '${i}'][data-columna = '${j}']`)
+            const segundaCeldaVertical = document.querySelector(`div[data-fila = '${i}'][data-columna = '${j + 1}']`)
+            const tercerCeldaVertical = document.querySelector(`div[data-fila = '${i}'][data-columna = '${j + 2}']`)
             primerCeldaVertical.classList.add("match-columna")
             segundaCeldaVertical.classList.add("match-columna")
             tercerCeldaVertical.classList.add("match-columna")
