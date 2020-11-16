@@ -1,0 +1,22 @@
+.grilla {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .grilla > div {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .match-fila  {
+    background-color: rgb(230, 166, 187);
+  }
+
+  .match-columna {
+    background-color: rgb(166, 125, 221);
+  }
