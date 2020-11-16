@@ -92,8 +92,8 @@ buscarMatches.onclick = () => {
 
           if (grilla [i][j] === grilla [i+1][j]  &&  grilla [i+1][j] === grilla [i+2][j]) {
             const primerCeldaVertical = document.querySelector(`div[data-fila = '${i}'][data-columna = '${j}']`)
-            const segundaCeldaVertical = document.querySelector(`div[data-fila = '${i}'][data-columna = '${j + 1}']`)
-            const tercerCeldaVertical = document.querySelector(`div[data-fila = '${i}'][data-columna = '${j + 2}']`)
+            const segundaCeldaVertical = document.querySelector(`div[data-fila = '${i+1}'][data-columna = '${j}']`)
+            const tercerCeldaVertical = document.querySelector(`div[data-fila = '${i+2}'][data-columna = '${j}']`)
             primerCeldaVertical.classList.add("match-columna")
             segundaCeldaVertical.classList.add("match-columna")
             tercerCeldaVertical.classList.add("match-columna")
