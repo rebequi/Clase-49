@@ -105,6 +105,7 @@ buscarMatches.onclick = () => {
     
   }
 }
+}
 
 
 alert ('Bienvenidx!')
